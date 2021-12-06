@@ -1,0 +1,18 @@
+.accordion-body {
+    color: #5f8ebb;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+h5 {
+    color: #5f8ebb;
+}
+@media screen and (max-width: 767px) {
+    .accordion-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

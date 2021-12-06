@@ -1,0 +1,7 @@
+<ejs-chart [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' useGroupingSeparator=true 
+  [legendSettings]='legendSettings' [tooltip]='tooltip' [title]='title' [titleStyle]='titleStyle'>
+  <e-series-collection>
+    <e-series [dataSource]='chartData' type='Line' xName='Month' yName='Sales' name='Monthly Sales' [marker]='marker'>
+    </e-series>
+  </e-series-collection>
+</ejs-chart>

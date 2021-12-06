@@ -1,0 +1,63 @@
+th:hover,
+    td:hover {
+        cursor: auto;
+    }
+
+    .p-header {
+        padding: 10px;
+        background: rgba(51, 90, 112, 0.571);
+        color: rgb(245, 241, 233);
+        font-size: 22px;
+        font-weight: 500;
+        border-bottom: solid 1px #dadada;
+    }
+
+    .p-footer {
+        padding: 5px;
+        background: rgba(51, 90, 112, 0.571);
+        color: rgb(245, 241, 233);
+        font-size: 18px;
+        border-bottom: solid 1px #dadada;
+    }
+
+    .select-label {
+        padding: 0;
+        color: sandybrown;
+        font-style: italic;
+        margin: 0;
+    }
+
+    table {
+        text-align: center;
+    }
+
+    th {
+        background: rgba(51, 90, 112, 0.571);
+
+    }
+
+    tr>th {
+        color: #fff !important;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    td {
+        color: #fff !important;
+    }
+
+    .tr-0 {
+        background: #DD8ABD;
+    }
+
+    .tr-1 {
+        background: #357CD2;
+    }
+
+    .tr-2 {
+        background: #404041;
+    }
+
+    .tr-3 {
+        background: #00BDAE;
+    }

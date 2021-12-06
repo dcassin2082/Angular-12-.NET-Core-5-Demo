@@ -1,0 +1,99 @@
+<div class="container-fluid hide-mobile">
+  <div class="row">
+    <div class="row">
+      <div class="col-md-6">
+        <ngx-spinner bdColor="#333" size="medium" color="#eca511" type="cube-transition">
+          <p class="spinner">Loading...</p>
+        </ngx-spinner>
+      </div>
+    </div>
+    <div class="div-secondary mb-1">
+      <!-- <h3 class="text-center animate six"><i class="fa fa fa-history fa-md"></i>
+        &nbsp;<span>O</span><span>r</span><span>d</span><span>e</span><span>r</span>&nbsp;<span>H</span><span>i</span><span>s</span>
+        <span>t</span><span>o</span><span>r</span><span>y</span>
+      </h3> -->
+      <h3 class="six-p">
+        <i class="fa fa fa-history fa-md"></i> Order History
+      </h3>
+    </div>
+    <div class="card mb-2">
+      <div class="card-body">
+        <div class="row div-center">
+          <div class="col">
+            <p class="demo-title-lg">
+              Customer List</p>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <app-customer-list></app-customer-list>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col">
+            <app-customer></app-customer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="row div-center">
+          <div class="col">
+            <p class="demo-title-lg">
+              Preferred Customers</p>
+          </div>
+        </div>
+        <div class="row div-center">
+          <div class="col">
+            <app-funnel-chart></app-funnel-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid hide-desktop mobile-background">
+  <h1 class="text-center mobile-heading">Order History</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <ngx-spinner bdColor="#333" size="medium" color="#eca511" type="cube-transition">
+        <p class="spinner">Loading...</p>
+      </ngx-spinner>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="row div-center">
+        <div class="col">
+          <p class="demo-title-lg">
+            Customer List</p>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <app-customer-list></app-customer-list>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col">
+          <app-customer></app-customer>
+        </div>
+      </div>
+      <!-- <div> 
+        <p class="demo-title-lg div-center">
+          Preferred Customers</p>
+       
+        <div class="card-body">
+          <div class="row mb-2">
+            <div class="col">
+              <app-funnel-chart-mobile></app-funnel-chart-mobile>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

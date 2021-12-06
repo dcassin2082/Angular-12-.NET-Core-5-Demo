@@ -1,0 +1,695 @@
+<div class="row mt-2">
+    <div class="col">
+        <h3 class="demo-title mt-2">
+            Object Oriented Programming
+        </h3>
+        <p>
+            - Daniel Cassin
+        </p>
+        <div class="accordion" id="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading101">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse101" aria-expanded="false" aria-controls="collapse101">
+                        1. What are the 4 pillars of Object Oriented Programming?
+                    </button>
+                </h2>
+                <div id="collapse101" class="accordion-collapse collapse" aria-labelledby="heading101"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ul>
+                            <li>
+                                Polymorphism, Inheritance, Encapsulation,
+                                Abstraction
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading102">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse102" aria-expanded="false" aria-controls="collapse102">
+                        2. What is the difference between an interface and an
+                        abstract
+                        class?
+                    </button>
+                </h2>
+                <div id="collapse102" class="accordion-collapse collapse" aria-labelledby="heading102"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ul>
+                            <li>
+                                Prior to C# 8.0 interfaces could only contain definitions for methods,
+                                properties, events
+                                and indexers. All interface members were public by default and could not
+                                contain access modifiers, cconstructors or
+                                method implementations.
+                                As of C# version 8, interfaces may now contain static
+                                constructors,
+                                methods, fields, and access modifiers
+                            </li>
+                            <li>
+                                Any class
+                                that implements an interface is contractually bound to implement all of
+                                its
+                                members
+                            </li>
+                            <li>
+                                Abstract classes can contain abstract, virtual, concrete, and static
+                                methods.
+                                Only
+                                methods marked as abstract are required to
+                                be implemented in the derived class.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading103">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse103" aria-expanded="false" aria-controls="collapse103">
+                        3. What are Generics?
+                    </button>
+                </h2>
+                <div id="collapse103" class="accordion-collapse collapse" aria-labelledby="heading103"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ul>
+                            <li>
+                                They allow you define data structures without having
+                                to
+                                commit
+                                to
+                                actual types.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading104">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse104" aria-expanded="false" aria-controls="collapse104">
+                        4. What are SOLID principles?
+                    </button>
+                </h2>
+                <div id="collapse104" class="accordion-collapse collapse" aria-labelledby="heading104"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ul style="list-style: none;">
+                            <li>S - Single responsibility principle
+                                <ul>
+                                    <li>An object should only have one job to do, for example
+                                        lets say
+                                        you
+                                        have
+                                        a method that calculates shapes. That class should NOT
+                                        also
+                                        display
+                                        the
+                                        output
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>O - Open / Closed principle
+                                <ul>
+                                    <li>Open for extension, Closed for modification, i.e., an
+                                        object
+                                        should
+                                        be
+                                        easily extendable without modifying the class itself.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>L - Liskov Substitution principle
+                                <ul>
+                                    <li>Every child class should be substitutable for its parent
+                                        class.
+                                        If
+                                        class
+                                        B : A, then we should be able to replace an object of A
+                                        by the
+                                        object of B without changing A
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>I - Interface Segregation principle
+                                <ul>
+                                    <li>Client should not be forced to depend on methods (or
+                                        interfaces)
+                                        it
+                                        does
+                                        not use.
+                                        Example: A Square doesn’t have a Volume so you shouldn’t
+                                        include
+                                        Volume
+                                        in your Shape interface. Instead create a Solid Shape
+                                        interface
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>D - Dependency Inversion principle
+                                <ul>
+                                    <li>Entities must depend on abstractions, not on
+                                        concretions.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading55">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse55" aria-expanded="false" aria-controls="collapse55">
+                        5. What are the 3 types of Dependency Injection?
+                    </button>
+                </h2>
+                <div id="collapse55" class="accordion-collapse collapse" aria-labelledby="heading55"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ol>
+                            <li>Constructor Injection
+                                <ul>
+                                    <li>Dependencies are provided through a class constructor.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Setter Injection
+                                <ul>
+                                    <li>The client exposes a setter method that the injector
+                                        uses to
+                                        inject
+                                        the
+                                        dependency.</li>
+                                </ul>
+                            </li>
+                            <li>Method Injection
+                                <ul>
+                                    <li>Dependencies are injected into a single method.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        6. Define Inversion of Control
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        Inversion of control means that objects should not
+                        create
+                        other
+                        objects upon which they rely to do their work.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        7. What is a DTO?
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A <strong>Data Transfer Object</strong> is an object that carries data between
+                        processes
+                        in order
+                        to
+                        reduce the number of method calls. They are used to transfer parameters
+                        to
+                        methods
+                        and
+                        as return types.
+                        MVC Model classes are DTO’s
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        8. What are the benefits of using DTOs?
+                    </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ol>
+                            <li>
+                                They reduce the amount of data that needs to be sent across the wire in
+                                distributed
+                                applications. Must be serializable
+                            </li>
+                            <li>
+                                They also allow you to change the shape of the data
+                            </li>
+                            <li>
+                                Must be serializable
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        9. What is loose coupling?
+                    </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        Loose coupling is when each component has little or
+                        no
+                        knowledge
+                        of
+                        the definitions of other separate components
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        10. What is a Delegate?
+                    </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A type that encapsulates a method. Delegates are created as method signatures that
+                        allow
+                        any
+                        method that matches its signature to be passed as a parameter to the delegate when
+                        it
+                        is instantiated. Delegates also work for passing LINQ expressions (predicate
+                        methods)
+                    </div>
+                </div>
+            </div>
+            <h3 class="demo-title mt-2">
+                SQL
+            </h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading11">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        11. In SQL, What are indexes?
+                    </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        Indexes are created on columns in tables or views. Without an index a
+                        table scan
+                        has
+                        to
+                        be performed which can take a long time. They allow
+                        SQL Server to find the column value in the index
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading12">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                        12. What is the difference between a clustered and a non-clustered index?
+                    </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ol>
+                            <li>Clustered indexes sort and store rows based on their key values.
+                                It is
+                                ordered,
+                                usually by the primary (ID) column. Can only have one clustered
+                                index
+                                per
+                                table
+                                such as a primary key. Think of it like a dictionary organized
+                                from A-Z.
+                                Good
+                                for sorting.
+                                Note that the primary key is a clustered index by default, so
+                                you must remove it if you want to create a clustered index on
+                                another column.
+                            </li>
+                            <li>Non-clustered indexes do not sort but are (255 total) separate
+                                objects
+                                that
+                                point to the rows containing the index.
+                                Think of it like the index in the back of the book which lists
+                                the
+                                keywords
+                                with
+                                their page numbers. Good for searching
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading13">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        13. What is a primary key?
+                    </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A key in a relational database table that is unique
+                        for each
+                        record,
+                        such as an ID column
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading14">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        14. What is a foreign key?
+                    </button>
+                </h2>
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A column in one table that uniquely identifies a row
+                        in
+                        another
+                        table
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading15">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                        15. What is the difference between a stored procedure and a function?
+                    </button>
+                </h2>
+                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A function must return a value while a stored procedure may or may not
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading16">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        16. What is a cursor?
+                    </button>
+                </h2>
+                <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        It is a temporary work area created when a SQL Select statement is
+                        executed
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading17">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                        17. What is a temporary table?
+                    </button>
+                </h2>
+                <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        They are set-based virtual tables that, like cursors, are created by the
+                        use of
+                        select
+                        statements
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading18">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                        18. In SQL, what is a view?
+                    </button>
+                </h2>
+                <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A view is a virtual table based on the result set of a sql statements.
+                        Example:
+                        CREATE
+                        VIEW view_name AS SELECT * FROM tblName WHERE condition
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading19">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                        19. What is the difference between a table-valued and a scalar-valued function?
+                    </button>
+                </h2>
+                <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ol>
+                            <li>Scalar functions accept any number of params and return 1 value.
+                            </li>
+                            <li>Inline table valued functions return a result set, much like a
+                                view. The
+                                difference is that they can accept parameters while views cannot.
+                            </li>
+                            <li>Multi-statement table-valued functions return table-type result
+                                sets.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading20">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                        20. What is a trigger?
+                    </button>
+                </h2>
+                <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A trigger is a special kind of stored procedure that executes when an
+                        event occurs on the db server
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading21">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                        21. What is the difference between an inner, left, right, full, and cross join?
+                    </button>
+                </h2>
+                <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <ol>
+                            <li>Inner join - Returns all matching rows from both tables.
+                            </li>
+                            <li>Left join - Returns all rows from the left table plus the
+                                matching rows
+                                from
+                                the
+                                right table and puts null values in all the unmatched rows (i.e.
+                                Rows
+                                not in
+                                the
+                                right table).
+                            </li>
+                            <li>Right join - Returns all rows from the right table plus the
+                                matching
+                                rows
+                                from
+                                the left table and puts null values in all the unmatched rows
+                                (i.e. Rows
+                                not
+                                in
+                                the left table).
+                            </li>
+                            <li>Full join - Returns all rows from both tables.
+                            </li>
+                            <li>Cross (Cartesian) join - Returns the Cartesian cross product of both tables,
+                                i.e.
+                                (numRowsInTableA) * (numRowsInTableB).
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading22">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                        22. What is a User Defined Table Type?
+                    </button>
+                </h2>
+                <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        A user defined type that allows the user to create read-only parameters
+                        to stored procedures that contain tabular data. Useful for passing
+                        a collection as a single parameter.
+                    </div>
+                </div>
+            </div>
+            <h3 class="demo-title mt-2">
+                Coding Challenges
+            </h3>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading23">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                        23. Write code to find the lowest positive integer not contained within an
+                        array
+                    </button>
+
+                </h2>
+                <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre3')">Copy</a></span>
+                        <pre id="pre3" class="pre-content">
+                            {{missingInt}}
+                            
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading24">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                        24. Write code to randomize a character array
+                    </button>
+                </h2>
+                <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre4')">Copy</a></span>
+                        <pre id="pre4" class="pre-content">
+                    {{randomizeChar}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading25">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                        25. Write code to randomize any primitive type array
+                    </button>
+                </h2>
+                <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre5')">Copy</a></span>
+                        <pre id="pre5" class="pre-content">
+                    {{randomizeAny}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading26">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                        26. Write a method that can be used to calculate the area of a circle
+                    </button>
+                </h2>
+                <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre5')">Copy</a></span>
+                        <pre class="pre-content">
+                    {{calculateArea}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading27">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                        27. Write a method to convert a generic list to a data table
+                    </button>
+                </h2>
+                <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre6')">Copy</a></span>
+                        <pre id="pre6" class="pre-content">
+                    {{dataTable}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading28">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                        28. Write a method to perform null checking of fields in data table rows
+                    </button>
+                </h2>
+                <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre7')">Copy</a></span>
+                        <pre id="pre7" class="pre-content">
+                    {{getFieldValue}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading29">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                        29. Write a method to check if a phrase is a palindrome
+                    </button>
+                </h2>
+                <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body p-indent">
+                        <span class="hide-mobile" style="padding-right: 20px;padding-bottom: 10px;"><a class="copy-link"
+                                (click)="copyText('pre8')">Copy</a></span>
+                        <pre id="pre8" class="pre-content">
+                    {{palindrome}}
+                </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

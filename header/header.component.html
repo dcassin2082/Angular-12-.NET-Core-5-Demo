@@ -1,0 +1,139 @@
+<style>
+    .navbar-dark {
+        background: #4433df;
+    }
+</style>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" [routerLink]='["home"]'>
+                <div>
+                    <p class="p-logo">
+                        <span class="p-logo-upper"> d
+                            <span class="p-logo-lower"> C
+                            </span>
+                        </span>
+                    </p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link" title="Home" [routerLinkActive]="['active']"
+                            [routerLink]='["home"]'>Home</a>
+                    </li>
+
+                    <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link" title="Customers" [routerLinkActive]="['active']"
+                            [routerLink]='["customers"]'>Order History</a>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link" title="Sales Tracker" [routerLinkActive]="['active']"
+                            [routerLink]='["sales-tracker"]'>Sales</a>
+                    </li>
+
+                    <!-- <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link" title="Sales Tracker" [routerLinkActive]="['active']"
+                            [routerLink]='["chart-tester"]'>Test</a>
+                    </li> -->
+                    
+                    <!-- <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link " title="Three JS" [routerLinkActive]="['active']"
+                            [routerLink]='["threejs"]'>Three JS</a>
+                    </li> -->
+                    
+                    <li class="nav-item dropdown" [routerLinkActive]="['active']">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown">
+                            e-Commerce
+                        </a>
+                        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdown"
+                            data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
+                            <!-- <a class="dropdown-item" title="Products" [routerLinkActive]="['active']"
+                            [routerLink]='["products"]'>Product Tester</a> -->
+                            <a class="dropdown-item" title="Products" [routerLinkActive]="['active']"
+                                [routerLink]='["products"]'>Products</a>
+                            <a class="dropdown-item" title="Shopping Cart" [routerLinkActive]="['active']"
+                                [routerLink]='["shopping-cart"]'>Shopping Cart</a>
+                            <a class="dropdown-item" title="Checkout" [routerLinkActive]="['active']"
+                                [routerLink]='["checkout"]'>Checkout</a>
+                            <!-- <a class="dropdown-item" title="Pie" [routerLinkActive]="['active']"
+                                [routerLink]='["pie2"]'>Pie</a>
+                            <a class="dropdown-item" title="Pie" [routerLinkActive]="['active']"
+                                [routerLink]='["doughnut"]'>Doughnut</a> -->
+                            <!-- <div class="dropdown-divider"></div> -->
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item dropdown" [routerLinkActive]="['active']">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown">
+                            Developer Tools
+                        </a>
+                        <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdown"
+                            data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse">
+
+                            <a class="dropdown-item" title="Azure CI / CD Local Git Repo"
+                                [routerLinkActive]="['active']" [routerLink]='["azure"]'> Azure Local Git Repo</a>
+                            <a class="dropdown-item" title="Azure DevOps" [routerLinkActive]="['active']"
+                                [routerLink]='["pipeline"]'> Azure DevOps</a>
+                            <a class="dropdown-item" title="Developer" [routerLinkActive]="['active']"
+                                [routerLink]='["developer"]'>.NET Core Setup</a>
+                            <a class="dropdown-item" title="JSON Web Tokens" [routerLinkActive]="['active']"
+                                [routerLink]='["jwt"]'> JSON Web Tokens</a>
+
+                            <a class="dropdown-item" title="Developer Quiz" [routerLinkActive]="['active']"
+                                [routerLink]='["devquiz"]'>Developer FAQ</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                        data-bs-toggle="collapse">
+                        <a class="nav-link" title="Charts" [routerLinkActive]="['active']"
+                            [routerLink]='["all-charts"]'>Angular Charts</a>
+                    </li>
+                 
+                    <!-- <li class="nav-item"><a
+                        class="nav-link text-white" href="https://github.com/dcassin2082" target="_blank"
+                        title="Github"><i class="fa fa-github-square"></i> Github
+                    </a> </li> -->
+                    <!-- <li class="nav-item" [routerLinkActive]="['active']" data-target=".navbar-collapse.show" data-toggle="collapse">
+            <a class="nav-link " title="Reporting Services" [routerLinkActive]="['active']"
+              [routerLink]='["ssrs"]'>Reporting Services</a>
+          </li> -->
+                </ul>
+                <form class="d-flex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item float-right"><a
+                            class="nav-link text-white" href="https://github.com/dcassin2082" target="_blank"
+                            title="Github"><i class="fa fa-github-square"></i> Github
+                        </a> </li>
+                        <!-- <li class="nav-item" [routerLinkActive]="['active']" data-bs-target=".navbar-collapse.show"
+                            data-bs-toggle="collapse">
+                            <a class="nav-link" title="About" [routerLinkActive]="['active']" style="padding-right:7px;"
+                                [routerLink]='["about"]'>About</a>
+                        </li> -->
+                        
+                        <!-- <li class="nav-item" data-bs-target=".navbar-collapse.show" data-bs-toggle="collapse"><a
+                                class="nav-link text-white" [href]="https://github.com/dcassin2082" target="_blank"
+                                title="Github"> Github
+                            </a>
+                        </li> -->
+                        <!-- <li *ngIf="userService.loggedIn" class="nav-item" data-target=".navbar-collapse.show"
+                            data-toggle="collapse">
+                            <button title="Logout" class="btn logout-btn my-2 my-sm-0 text-white"
+                                (click)="onLogout()">Logout</button>
+                        </li> -->
+                    </ul>
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button> -->
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>

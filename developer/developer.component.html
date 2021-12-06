@@ -1,0 +1,495 @@
+<style>
+    .vl {
+        width: 30%;
+        border-left: 10px solid #5f8ebb;
+        border-right: 10px solid #5f8ebb;
+        border: 5px solid #5f8ebb;
+        height: 100%;
+        border-radius: 8px;
+        padding-left: 10px;
+        padding-top:10px;
+        float: right;
+        /* border-top:1px solid #5f8ebb;
+      border:4px solid #5f8ebb; */
+    }
+    .triangle {
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top: 0;
+  border-bottom: 50px solid #5f8ebb;
+}
+</style>
+
+<!-- <style>
+    .pre-description {
+        color: rgba(114, 146, 160, 0.66);
+        padding-left: 50px;
+    }
+
+    h5 {
+        font-weight: normal;
+    }
+
+    @media screen and (max-width: 414px) {
+        .pre-description {
+            font-size: 12px;
+        }
+
+        .pre-content {
+            font-size: 10px;
+        }
+
+        h5 {
+            font-size: 16px !important;
+        }
+
+        .hide-mobile {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 415px) and (max-width:767px) {
+        .pre-content {
+            font-size: 12px;
+        }
+
+        .pre-description {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 16px !important;
+        }
+
+        .hide-mobile {
+            display: none;
+        }
+    }
+
+    pre {
+        color: #1f5da9;
+        padding-left: 35px !important;
+    }
+
+    span {
+        padding-left: 25px;
+        color: rgba(114, 146, 160, 0.66);
+        font-weight: 500;
+    }
+
+    .json {
+        color: goldenrod;
+    }
+
+    h5 {
+        color: sandybrown;
+    }
+
+    .btn-link {
+        text-decoration: none;
+    }
+
+    .btn-link:hover {
+        background: #dadada;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .c-sharp {
+        color: #1f5da9;
+        font-weight: 500;
+    }
+
+    .core-title {
+        padding: 20px;
+        font-size: 24px;
+        color: goldenrod;
+        font-weight: 500;
+        /* background-image: url('../../assets/img/pexels-photo-950241.jpeg'); */
+    }
+
+    @media only screen and (max-width: 767px) {
+        .core-title {
+            font-size: 16px;
+        }
+    }
+
+    /* h4 {
+        color: #1b4a83;
+    } */
+
+    .page-title {
+        background-image: url('../../assets/img/pexels-photo-950241.jpeg') !important;
+    }
+</style> -->
+<div class="api-container mb-2 hide-mobile">
+    <div class="box">
+        <div class="title">
+            <span class="block"></span>
+            <h1><i class="fa fa-windows fa-md fa-white"></i> &nbsp;.NET Core API<span></span></h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid hide-mobile">
+    <div class="row">
+        <div class="col-12">
+            <article class="blog-card article-background">
+                <div class="blog-card__background">
+                    <div class="card__background--wrapper">
+                        <div class="card__background--main">
+                            <div class="card__background--layer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card__head blog-card-head">
+                    <div>
+                        <p class="p-logo-lg">
+                            <span class="p-logo-upper-lg">d
+                                <span class="p-logo-lower-lg"> C
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog-card__info">
+                    <div class="row">
+                        <div class="col">
+                            <img src="../../assets/img/maxresdefault_1_40_1_67.jpg" class="pull-right" alt="">
+                            <h5 >Setting up the .NET Core API</h5>
+                            <p>
+                                - Daniel Cassin
+                            </p>
+                            <ol>
+                                <li>
+                                    Install the following nuget packages
+                                    <ul style="list-style: square;">
+                                        <li>
+                                            Microsoft.EntityFrameworkCore.SqlServer
+                                        </li>
+                                        <li>
+                                            Microsoft.EntityFrameworkCore.Tools
+                                        </li>
+                                        <li>
+                                            Bricelam.EntityFrameworkCore.Pluralizer
+                                        </li>
+                                        <li>
+                                            Microsoft.AspNetCore.Mvc.NewtonsoftJson
+                                        </li>
+                                        <li>
+                                            Microsoft.Extensions.Configuration
+                                        </li>
+                                        <li>
+                                            Microsoft.Extensions.Configuration.FileExtensions
+                                        </li>
+                                        <li>
+                                            Microsoft.Extensions.Configuration.Json
+                                        </li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            Using Package Manager Console, Scaffold DbContext as follows
+                                            <span class="hide-mobile pull-right"><a class="copy-link"
+                                                    (click)="copyText('pre2')">Copy</a></span>
+                                            <pre id="pre2" class="pre-content">
+                                                    {{dbContext}}
+                                                </pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            In appsettings.json, add Connecton Strings and Application Settings
+                                            <span class="hide-mobile pull-right"><a class="copy-link"
+                                                    (click)="copyText('pre1')">Copy</a></span>
+                                            <pre id="pre1" class="pre-content">
+                                        {{connStrings}} 
+                                    </pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            Add the following to the Startup.cs class
+                                            <span class="hide-mobile pull-right"><a class="copy-link"
+                                                    (click)="copyText('pre3')">Copy</a></span>
+                                            <pre id="pre3" class="pre-content">
+                                        {{item4}}
+                                    </pre>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row mb-2">
+                                        <div class="col-md-8">
+                                            (optional) In your dbcontext class, OnConfiguring method, replace the
+                                            connection string with
+                                            the following
+                                            <span class="hide-mobile pull-right"><a class="copy-link"
+                                                    (click)="copyText('pre4')">Copy</a></span>
+                                            <pre id="pre4" class="pre-content">
+                                        {{item9}}
+                                    </pre>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                            <a (click)="navigate('home')" class="btn btn--with-icon"><i
+                                    class="btn-icon fa fa-long-arrow-right"></i>HOME</a>
+                        </div>
+                        <div class="col-md-4">
+                              
+                            <div class="row">
+                                <div class="col">
+                                   <!-- <img src="../../assets/img/net-core.png" alt=""> -->
+                                </div>
+                            </div>
+                            <!-- <div class="vl text-center "
+                                style="background-image: url('../../assets/img/istockphoto-1226478932-170667a.jpg');">
+                                <div>
+                                    <h5 class="text-center"
+                                        style="box-shadow: 0 0;writing-mode: vertical-rl; text-orientation: mixed;color:#fff;">
+                                        REST API with .NET Core 5.0
+                                </h5>
+                                    <hr style="color: blanchedalmond;margin-top: 0;">
+                                    <small class="pull-right"
+                                        style="writing-mode: vertical-rl;text-orientation: mixed;color:#fff;">
+                                        by Daniel Cassin
+                                    </small>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid hide-desktop mobile-background">
+    <h1 class="mobile-heading div-center">
+        Azure Angular Client
+    </h1>
+    <div class="card">
+        <!-- <div class="div-center card-header">
+            <h4>Creating the .NET Core API</h4>
+        </div> -->
+        <div class="card-body">
+            <div class="row div-center ">
+                <div class="col demo-title-sm">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col">
+                    <h3 class="demo-title">
+                        1 - Install nuget packages
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    Using Nuget Package Manager or Package Manager Console
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="nuget" class="pre-content">
+                                    {{nuget}}
+                                </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        2 - Add connection strings<span class="pull-right hide-mobile"><button class="btn btn-link"
+                                (click)="copyText('pre1')">Copy</button></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    In appsettings.json, add the following
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre1" class="pre-content">
+                                {{connStrings}} 
+                            </pre>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        3 - Scaffold DbContext <span class="pull-right hide-mobile"><button class="btn btn-link"
+                                (click)="copyText('pre2')">Copy</button></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    In Package manager Console
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre2" class="pre-content">
+                        {{dbContext}}
+                    </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        4 - Add db context to Startup.cs <span class="pull-right hide-mobile"><button
+                                class="btn btn-link" (click)="copyText('pre3')">Copy</button></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    In ConfigureServices method, add the following
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre3" class="pre-content">
+                            {{item4}}
+                        </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        5 - Configure CORS
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description span-instruction">
+                    In Startup.cs / ConfigureServices method, add the
+                    following<span class="pull-right hide-mobile"><button class="btn btn-link"
+                            (click)="copyText('pre4')">Copy</button></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre4" class="pre-content">
+                            {{item5}}
+                        </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    Add the following to Configure method
+                    <span class="pull-right hide-mobile"><button class="btn btn-link"
+                            (click)="copyText('pre5')">Copy</button></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre5" class="pre-content">
+                            {{item6}}
+                        </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    Add the following to appsettings.json
+                    <span class="pull-right hide-mobile"><button class="btn btn-link"
+                            (click)="copyText('pre6')">Copy</button></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre6" class="pre-content">
+                            {{item7}}
+                        </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        6 - Configure JSON naming conventions <span class="pull-right hide-mobile"><button
+                                class="btn btn-link" (click)="copyText('pre7')">Copy</button></span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col pre-description">
+                    In order to avoid automatic camel-casing of json objects, in Startup.cs , add the following to the
+                    ConfigureServices method
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre7" class="pre-content">
+                        {{item8}}
+                    </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-1">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3 class="demo-title">
+                        7 - Remove connection string from source code (optional) <span
+                            class="pull-right hide-mobile"><button class="btn btn-link"
+                                (click)="copyText('pre8')">Copy</button></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col pre-description">
+                    In your dbcontext class, OnConfiguring method, replace the connection string with the following
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <pre id="pre8" class="pre-content">
+                        {{item9}}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
