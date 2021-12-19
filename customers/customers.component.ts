@@ -11,18 +11,11 @@ import * as Chart from 'chart.js';
 })
 export class CustomersComponent implements OnInit {
 
-  bitch: boolean = false;
   constructor(public userService: UserService, private router: Router) { }
 
   checked: boolean = false;
   switchChartType: string = 'Column';
 
-  canvas: any;
-  ctx: any;
-  ngAfterViewInit(): void {
-  this.canvas = document.getElementById('myChart');
-    this.ctx = this.canvas.getContext('2d');
-  }
   ngOnInit(): void {
     
     // this.userService.loggedIn = true;
