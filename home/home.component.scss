@@ -1,9 +1,14 @@
-$primary: #ffb535;
+// $primary: #ffb535;
+$primary: rgb(64, 107, 150);
 $text-color: #363738;
+$blue: #58b;
 body{
   background: #eee;
 }
 
+// ol, ul {
+//   overflow-x: auto;
+// }
 .mobile-background {
   padding-left: 2px !important;
   padding-right: 2px !important;
@@ -166,6 +171,8 @@ a.icon-link {
       vertical-align: bottom;
       color: white;
       background: $primary;
+      background: #534d4d;
+      background: $blue;
       clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
     }
   }
@@ -260,7 +267,9 @@ h5 {
   }
 }
 
-
+.hdr-5 {
+  color: sandybrown !important;
+}
 
 
 
