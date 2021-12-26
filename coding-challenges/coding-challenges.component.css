@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+    .accordion-button {
+        font-size: 12px; 
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+}
+.accordion-button:focus {
+    box-shadow: none;
+} 
+
+.div-sql {
+  padding-top: 20px;
+}
+
+.span-sql {
+  color: yellow;
+}

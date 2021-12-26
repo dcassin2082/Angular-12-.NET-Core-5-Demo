@@ -1,0 +1,192 @@
+<div class="accordion" id="accordionCodeSamples">
+    <div class="accordion-item mt-2">
+        <h2 class="accordion-header" id="heading23">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" (click)="showDetails(6)"
+                data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                1. Write code to find the lowest positive integer not contained within an
+                array
+            </button>
+        </h2>
+        <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre23')">Copy</a></span>
+                <div [innerHTML]='lowestPosIntSafe' id="pre23">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading24">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                2. Write code to randomize a character array
+            </button>
+        </h2>
+        <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre24')">Copy</a></span>
+                <div [innerHTML]='randomizeCharSafe' id="pre24">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading25">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                3. Write code to randomize any primitive type array
+            </button>
+        </h2>
+        <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre25')">Copy</a></span>
+                <div [innerHTML]='randomizeAnySafe' id="pre25">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading26">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                4. Write a method that can be used to calculate the area of a circle
+            </button>
+        </h2>
+        <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre26')">Copy</a></span>
+                <div [innerHTML]='calculateAreaSafe' id="pre26">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading27">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                5. Write a method to convert a generic list to a data table
+            </button>
+        </h2>
+        <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre27')">Copy</a></span>
+                <div class="pre-content div-sql" id="pre27">
+                    <pre>
+<span class="span-sql mb-1">-- In SQL Server, create the user defined table type under Programmability / Types / User-Defined Table Types</span>
+CREATE TYPE [dbo].[NameTableType] AS TABLE(
+[Id] [int] NOT NULL,
+[FirstName] [nvarchar](50) NULL,
+[LastName] [nvarchar](50) NULL
+)
+GO
+
+-- Create a stored procedure with your type as a read only parameter
+CREATE PROCEDURE [dbo].[insert_names]
+@names as dbo.NameTableType readonly
+AS
+BEGIN
+SET NOCOUNT ON;
+
+insert into Name(FirstName, LastName)
+select FirstName, LastName from @names
+END 
+                            </pre>
+                </div>
+                <span><a class="copy-link" (click)="copyText('pre28')">Copy</a></span>
+                <div [innerHTML]='dataTableSafe' id="pre28">
+                </div>
+                <span><a class="copy-link" (click)="copyText('pre29')">Copy</a></span>
+                <div [innerHTML]='dataTableUsageSafe' id="pre29">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading28">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                6. Write a method to perform null checking of fields in data table rows
+            </button>
+        </h2>
+        <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre30')">Copy</a></span>
+                <div [innerHTML]='getFieldValueSafe' id="pre30">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading29">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                7. Write a method to check if a phrase is a palindrome
+            </button>
+        </h2>
+        <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('pre31')">Copy</a></span>
+                <div [innerHTML]='palindromeSafe' id="pre31">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading30">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                8. Given the following strings: &nbsp;['abcdfheaklezznzdwgsgcdeyu', 'dan'], find the smallest substring
+                from the first that contains the second
+            </button>
+        </h2>
+        <div id="collapse30" class="accordion-collapse collapse" aria-labelledby="heading30"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('minWindowSubstring')">Copy</a></span>
+                <div [innerHTML]='minWindowSubstringSafe' id="minWindowSubstring">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading31">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                9. Given a (non-repeating) list of integers from 1 to n with one integer missing, find the missing
+                integer
+            </button>
+        </h2>
+        <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="heading31"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span><a class="copy-link" (click)="copyText('findMissingInt')">Copy</a></span>
+                <div [innerHTML]='findMissingIntSafe' id="findMissingInt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading32">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                10. Towers of Hanoi:&nbsp;Write method to move n-disks from start to finish tower: 3 towers, n-disks
+                arranged from smallest to largest (top to bottom)
+            </button>
+        </h2>
+        <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32"
+            data-bs-parent="#accordionCodeSamples">
+            <div class="accordion-body p-indent">
+                <span class=""><a class="copy-link" (click)="copyText('towerOfHanoi')">Copy</a></span>
+                <div [innerHTML]='towerOfHanoiSafe' id="towerOfHanoi">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
