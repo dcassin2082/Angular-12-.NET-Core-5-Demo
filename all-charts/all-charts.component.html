@@ -1,18 +1,16 @@
-<style>
-    .h3-color {
-        color: sandybrown;
-    }
-</style>
+<div class="row div-center">
+    <div class="container">
+        <div class="col-md-6">
+            <ngx-spinner bdColor="#333" size="medium" color="#eca511" type="cube-transition">
+                <p class="spinner">Loading...</p>
+            </ngx-spinner>
+        </div>
+    </div>
+</div>
 <div class="container-fluid hide-mobile">
     <div class="row">
-        <div class="div-secondary mb-1">
-            <!-- <h3 class="text-center animate six"><i class="fa fa fa-pie-chart fa-md"></i>
-                &nbsp;<span>S</span><span>y</span><span>n</span><span>c</span><span>f</span><span>u</span><span>s</span><span>i</span>
-                <span>o</span><span>n</span>&nbsp;
-                <span>A</span><span>n</span><span>g</span><span>u</span><span>l</span><span>a</span><span>r</span>
-                &nbsp;<span>C</span><span>h</span><span>a</span><span>r</span><span>t</span><span>s</span>
-            </h3> -->
-            <h3 class="six-p">
+        <div class="div-secondary mb-1 div-center">
+            <h3>
                 <i class="fa fa fa-pie-chart fa-md"></i> Syncfusion Angular Charts
             </h3>
         </div>
@@ -40,31 +38,17 @@
                 </div>
                 <div class="row mb-2 div-center" id="products-header">
                     <div class="col">
-                        <h3 class="h3-color">Pie Chart</h3>
+                        <h5 class="chart-hdr">Pie Chart</h5>
                         <app-pie-chart></app-pie-chart>
                     </div>
                     <div class="col">
-                        <h3 class="h3-color">Doughnut Chart</h3>
+                        <h5 class="chart-hdr">Doughnut Chart</h5> 
                         <app-douughnut-chart></app-douughnut-chart>
-                    </div>
-                </div>
-                <div class="container" class="product-sku hide-mobile">
-                    <div class="row div-center">
-                        <div class="col">
-                            <h3 class="h3-color">Pie Chart</h3>
-                            <app-pie-chart></app-pie-chart>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="h3-color">Doughnut Chart</h3>
-                            <app-douughnut-chart></app-douughnut-chart>
-                        </div>
                     </div>
                 </div>
                 <div class="row mb-2 div-center">
                     <div class="col">
-                        <h3 class="h3-color">Funnel Chart</h3>
+                        <h5 class="chart-hdr">Funnel Chart</h5>
                         <app-funnel-chart></app-funnel-chart>
                     </div>
                 </div>
@@ -72,60 +56,39 @@
         </div>
     </div>
 </div>
-<div class="container-fluid div-center hide-desktop mobile-background">
-    <h1 class="mobile-heading div-center">
-        Syncfusion Angular Charts
-    </h1>
-    <div class="row div-center">
-        <div class="container">
-            <div class="col-md-6">
-                <ngx-spinner bdColor="#333" size="medium" color="#eca511" type="cube-transition">
-                    <p class="spinner">Loading...</p>
-                </ngx-spinner>
-            </div>
+<div class="container-fluid div-center hide-desktop">
+    <div class="div-secondary">
+        <h3>
+            <i class="fa fa fa-pie-chart fa-md"></i> Syncfusion Charts
+        </h3>
+    </div>
+    <div class="row mb-2">
+        <div class="col">
+            <app-multi-column></app-multi-column>
         </div>
     </div>
-    <div class="card">
-        <div class="card-body">
-            <div class="row mb-2">
-                <div class="col">
-                    <app-multi-column></app-multi-column>
-                </div>
-            </div>
 
-            <div class="row mb-2">
-                <div class="col">
-                    <app-trackball-chart></app-trackball-chart>
-                </div>
+    <div class="row mb-2">
+        <div class="col">
+            <app-trackball-chart></app-trackball-chart>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-12">
+            <app-column-chart></app-column-chart>
+        </div>
+    </div>
+    <div class="container" class="product-sku hide-mobile">
+        <div class="row">
+            <div class="col">
+                <h5 class="chart-hdr">Pie Chart</h5>
+                <app-pie-chart></app-pie-chart>
             </div>
-            <div class="row mb-2">
-                <div class="col-md-12">
-                    <app-column-chart></app-column-chart>
-                </div>
-            </div>
-            <div class="row mb-2" id="products-header">
-                <div class="col">
-                    <h3 class="h3-color">Pie Chart</h3>
-                    <app-pie-chart></app-pie-chart>
-                </div>
-                <div class="col">
-                    <h3 class="h3-color">Doughnut Chart</h3>
-                    <app-douughnut-chart></app-douughnut-chart>
-                </div>
-            </div>
-            <div class="container" class="product-sku hide-mobile">
-                <div class="row">
-                    <div class="col">
-                        <h3 class="h3-color">Pie Chart</h3>
-                        <app-pie-chart></app-pie-chart>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h3 class="h3-color">Doughnut Chart</h3>
-                        <app-douughnut-chart></app-douughnut-chart>
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="chart-hdr">Doughnut Chart</h5>
+                <app-douughnut-chart></app-douughnut-chart>
             </div>
         </div>
     </div>
