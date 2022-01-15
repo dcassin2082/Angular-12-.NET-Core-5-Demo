@@ -92,12 +92,6 @@ namespace DemoApi
             {
                 endpoints.MapControllers();
             });
-
-            // to get ip address
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
         }
     }
 }
