@@ -45,7 +45,7 @@ namespace DemoApi
 
             if(Environment.IsProduction())
             {
-                services.AddDbContext<JungleDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MsAspConnection")));
+                services.AddDbContext<JungleDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AzureDbConnection")));
             }
             else
             {
