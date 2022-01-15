@@ -86,6 +86,8 @@ namespace DemoApi
 
             app.UseAuthorization();
 
+            app.UseDeveloperExceptionPage();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
